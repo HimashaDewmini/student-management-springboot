@@ -57,6 +57,10 @@ docker ps
 ```
 Base URL: http://localhost:8080
 ```
+4️⃣ Stop Containers
+```
+docker-compose down
+```
 ---
 
 ## 🧠 Application Properties
@@ -138,6 +142,7 @@ This project was developed for academic purposes — part of the Spring Boot RES
 Himasha Dewmini 
 Undergraduate, University of Sri Jayewardenepura
 Faculty of Technology 
+
 
 
 
