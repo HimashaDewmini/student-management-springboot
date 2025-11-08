@@ -53,6 +53,11 @@ docker-compose up --build -d
 ```
 docker ps
 ```
+You should see:
+
+student_app → Spring Boot API (port 8080)
+student_mysql → MySQL (port 3306)
+
 3️⃣ Access the API
 ```
 Base URL: http://localhost:8080
@@ -114,7 +119,7 @@ Example Query Parameters:
 ```
 ---
 
-##⚡ Swagger UI 
+⚡ Swagger UI 
 ```
 Start the app, then visit:
 👉 http://localhost:8080/swagger-ui/index.html
@@ -142,6 +147,7 @@ This project was developed for academic purposes — part of the Spring Boot RES
 Himasha Dewmini 
 Undergraduate, University of Sri Jayewardenepura
 Faculty of Technology 
+
 
 
 
