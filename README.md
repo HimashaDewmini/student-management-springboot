@@ -28,20 +28,34 @@ This project is a simple **Student Management REST API** built using **Spring Bo
 - **Docker, Docker Compose**
 
 ---
-## ⚡ Getting Started
+## ⚙️ Setup & Run (Using Docker)
 
-## 1️⃣ Clone the Repository
+Follow these steps to run the Student Management API using Docker:
+
+### 1️⃣ Prerequisites
+- Docker and Docker Compose installed
+- JDK 17 installed (if you want to build the JAR locally)
+- Optional: Postman or curl to test the API
+
+---
+
+### 2️⃣ Build and Run Containers
+
+1. Open terminal in the project folder (where `docker-compose.yml` is located).
+
+2. Build and start containers in **detached mode**:
+
 ```bash
-git clone https://github.com/HimashaDewmini/student-management-springboot.git
+docker-compose up --build -d
 
-2️⃣ Navigate to the Project
-cd student-management-springboot
-
-3️⃣ Build & Run
-mvn spring-boot:run
-
-The application will start at:
-👉 http://localhost:8080
+```
+3.Check running containers:
+```
+docker ps
+```
+3️⃣ Access the API
+```
+Base URL: http://localhost:8080
 ```
 ---
 
@@ -124,6 +138,7 @@ This project was developed for academic purposes — part of the Spring Boot RES
 Himasha Dewmini 
 Undergraduate, University of Sri Jayewardenepura
 Faculty of Technology 
+
 
 
 
