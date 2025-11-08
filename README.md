@@ -62,7 +62,7 @@ springdoc.swagger-ui.path=/swagger-ui.html
 
 ```
 ---
-🔗 API Endpoints
+## 🔗 API Endpoints
 
 | Method | Endpoint                                       | Description                             |
 | ------ | ---------------------------------------------- | --------------------------------------- |
@@ -76,7 +76,7 @@ springdoc.swagger-ui.path=/swagger-ui.html
 
 ---
 
-🧪 API Testing (Postman)
+## 🧪 API Testing (Postman)
 You can import your API endpoints into Postman and test the CRUD functionality.
 bash
 ```
@@ -93,17 +93,17 @@ Example Query Parameters:
 /api/students?page=0&size=5&sort=name,asc
 /api/students/search/by-name?name=Himasha
 /api/students/search/by-course?course=Software Engineering
-
----
 ```
-⚡ Swagger UI 
+---
+
+##⚡ Swagger UI 
 ```
 Start the app, then visit:
 👉 http://localhost:8080/swagger-ui/index.html
 ```
 ---
 
-🧱 Error Handling Example
+## 🧱 Error Handling Example
 
 | Scenario          | Response Code | Example Message                  |
 | ----------------- | ------------- | -------------------------------- |
@@ -113,17 +113,18 @@ Start the app, then visit:
 
 ---
 
-🧾 License
+## 🧾 License
 
 This project was developed for academic purposes — part of the Spring Boot REST API assignment with Docker integration.
 
 ---
 
-👨‍💻 Developer
+## 👨‍💻 Developer
 
 Himasha Dewmini 
 Undergraduate, University of Sri Jayewardenepura
 Faculty of Technology 
+
 
 
 
