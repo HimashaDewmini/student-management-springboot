@@ -6,12 +6,13 @@ This project is a simple **Student Management REST API** built using **Spring Bo
 ---
 ## 🚀 Features
 
-✅ Manage Students (Add, View, Update, Delete)  
-✅ Pagination & Sorting for `GET /api/students`  
-✅ Search by **name** or **course**  
-✅ Field validation (email format, not null, age > 18)  
-✅ Integrated Swagger UI (`springdoc-openapi`)  
-✅ MySQL + Spring Boot app fully containerized with **Docker Compose**
+✅ **Student Management**: Add, View, Update, Delete  
+✅ **Pagination & Sorting** for listing students  
+✅ **Search functionality** by name or course  
+✅ **Field Validation**: email format, not null, age > 18  
+✅ **Swagger UI Integration** (`springdoc-openapi`)  
+✅ **Dockerized**: Runs with MySQL container  
+
 
 ---
 
@@ -27,16 +28,17 @@ This project is a simple **Student Management REST API** built using **Spring Bo
 - **Docker, Docker Compose**
 
 ---
-🚀 How to Run
-1. Clone the Repository
+## ⚡ Getting Started
+
+### 1️⃣ Clone the Repository
+```bash
 git clone https://github.com/HimashaDewmini/student-management-springboot.git
 
-2. Navigate to the Project
+2️⃣ Navigate to the Project
 cd student-management-springboot
 
-3. Build and Run
+3️⃣ Build & Run
 mvn spring-boot:run
-
 
 The application will start at:
 👉 http://localhost:8080
@@ -81,10 +83,12 @@ Example JSON for POST request:
   "age": 24,
   "course": "Software Engineering"
 }
+
 Example Query Parameters:
+
 /api/students?page=0&size=5&sort=name,asc
-/api/students/search?name=Himasha
-/api/students/search?course=Software Engineering
+/api/students/search/by-name?name=Himasha
+/api/students/search/by-course?course=Software Engineering
 
 ---
 
@@ -116,4 +120,5 @@ This project was developed for academic purposes — part of the Spring Boot RES
 Himasha Dewmini 
 Undergraduate, University of Sri Jayewardenepura
 Faculty of Technology 
+
 
