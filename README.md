@@ -55,8 +55,8 @@ docker ps
 ```
 You should see:
 
-student_app → Spring Boot API (port 8080)
-student_mysql → MySQL (port 3306)
+-student_app → Spring Boot API (port 8080)
+-student_mysql → MySQL (port 3306)
 
 3️⃣ Access the API
 ```
@@ -147,6 +147,7 @@ This project was developed for academic purposes — part of the Spring Boot RES
 Himasha Dewmini 
 Undergraduate, University of Sri Jayewardenepura
 Faculty of Technology 
+
 
 
 
