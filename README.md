@@ -31,7 +31,7 @@ This project is a simple **Student Management REST API** built using **Spring Bo
 ## ⚡ Getting Started
 
 ## 1️⃣ Clone the Repository
-
+```bash
 git clone https://github.com/HimashaDewmini/student-management-springboot.git
 
 2️⃣ Navigate to the Project
@@ -60,6 +60,7 @@ server.port=8080
 springdoc.api-docs.path=/v3/api-docs
 springdoc.swagger-ui.path=/swagger-ui.html
 
+```
 ---
 ##🔗 API Endpoints
 
@@ -122,6 +123,7 @@ This project was developed for academic purposes — part of the Spring Boot RES
 Himasha Dewmini 
 Undergraduate, University of Sri Jayewardenepura
 Faculty of Technology 
+
 
 
 
