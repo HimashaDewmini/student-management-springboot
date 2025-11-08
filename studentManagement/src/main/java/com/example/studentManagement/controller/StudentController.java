@@ -2,6 +2,8 @@ package com.example.studentManagement.controller;
 
 import com.example.studentManagement.dto.StudentDTO;
 import com.example.studentManagement.service.StudentService;
+import io.swagger.v3.oas.annotations.tags.Tag;
+import jdk.jfr.Threshold;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.*;
@@ -14,6 +16,7 @@ import java.util.Map;
 @RestController
 @CrossOrigin
 @RequestMapping("api/v1/students")
+@Tag(name = " Student Controller" , description = "Test APIs")
 public class StudentController {
 
     @Autowired
