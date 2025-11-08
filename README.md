@@ -30,8 +30,8 @@ This project is a simple **Student Management REST API** built using **Spring Bo
 ---
 ## ⚡ Getting Started
 
-### 1️⃣ Clone the Repository
-```bash
+## 1️⃣ Clone the Repository
+
 git clone https://github.com/HimashaDewmini/student-management-springboot.git
 
 2️⃣ Navigate to the Project
@@ -44,7 +44,9 @@ The application will start at:
 👉 http://localhost:8080
 
 ---
-## 🧠 Application Properties
+
+🧠 Application Properties
+
 spring.application.name=studentManagement
 spring.datasource.url=jdbc:mysql://localhost:3306/studentdb?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
 spring.datasource.username=root
@@ -120,6 +122,7 @@ This project was developed for academic purposes — part of the Spring Boot RES
 Himasha Dewmini 
 Undergraduate, University of Sri Jayewardenepura
 Faculty of Technology 
+
 
 
 
