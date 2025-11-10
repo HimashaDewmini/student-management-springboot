@@ -70,22 +70,33 @@ docker-compose down
 ---
 
 ## 🧠 Application Properties
-```
+
+Below are the key configurations used in the `application.properties` file for this project:
+
+```properties
 spring.application.name=studentManagement
-spring.datasource.url=jdbc:mysql://localhost:3306/studentdb?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
-spring.datasource.username=root
-spring.datasource.password=
+
+# Database Configuration (local + Docker support)
+spring.datasource.url=${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/studentdb?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC}
+spring.datasource.username=${SPRING_DATASOURCE_USERNAME:root}
+spring.datasource.password=${SPRING_DATASOURCE_PASSWORD:}
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+# Hibernate / JPA Configuration
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.format_sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+
+# Server Configuration
 server.port=8080
+
+# Swagger / OpenAPI Configuration
 springdoc.api-docs.path=/v3/api-docs
 springdoc.swagger-ui.path=/swagger-ui.html
-
 ```
 ---
+
 ## 🐳 Docker Compose Configuration
 
 ```yaml
@@ -186,6 +197,7 @@ This project was developed for academic purposes — part of the Spring Boot RES
 Himasha Dewmini 
 Undergraduate, University of Sri Jayewardenepura
 Faculty of Technology 
+
 
 
 
