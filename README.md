@@ -197,9 +197,9 @@ This project was developed for academic purposes — part of the Spring Boot RES
 
 ## 👨‍💻 Developer
 
-Himasha Dewmini 
-Undergraduate, University of Sri Jayewardenepura
-Faculty of Technology 
+**Himasha Dewmini**  
+Undergraduate, **University of Sri Jayewardenepura**  
+Faculty of Technology  
 
 
 
