@@ -86,7 +86,7 @@ springdoc.swagger-ui.path=/swagger-ui.html
 
 ```
 ---
-##🐳 Docker Compose Configuration
+## 🐳 Docker Compose Configuration
 ```
 version: "3.8"
 
@@ -185,6 +185,7 @@ This project was developed for academic purposes — part of the Spring Boot RES
 Himasha Dewmini 
 Undergraduate, University of Sri Jayewardenepura
 Faculty of Technology 
+
 
 
 
