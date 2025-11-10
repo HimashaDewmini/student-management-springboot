@@ -150,22 +150,25 @@ volumes:
 ---
 
 ## 🧪 API Testing (Postman)
-You can import your API endpoints into Postman and test the CRUD functionality.
-bash
-```
-Example JSON for POST request:
+
+You can import your API endpoints into **Postman** and test the CRUD functionality.
+
+### 🧍 Example JSON for POST request
+```json
 {
   "name": "Himasha Dewmini",
   "email": "himasha@gmail.com",
   "age": 24,
   "course": "Software Engineering"
 }
-
-Example Query Parameters:
-
+```
+---
+🔍 Example Query Parameters
+```
 /api/students?page=0&size=5&sort=name,asc
 /api/students/search/by-name?name=Himasha
 /api/students/search/by-course?course=Software Engineering
+
 ```
 ---
 
@@ -197,6 +200,7 @@ This project was developed for academic purposes — part of the Spring Boot RES
 Himasha Dewmini 
 Undergraduate, University of Sri Jayewardenepura
 Faculty of Technology 
+
 
 
 
