@@ -86,6 +86,43 @@ springdoc.swagger-ui.path=/swagger-ui.html
 
 ```
 ---
+##🐳 Docker Compose Configuration
+```
+version: "3.8"
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: student_mysql
+    environment:
+      MYSQL_DATABASE: studentdb
+      MYSQL_ROOT_PASSWORD: rootpassword
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./studentdb.sql:/docker-entrypoint-initdb.d/studentdb.sql   # <-- added SQL dump
+    restart: always
+
+  app:
+    build: .
+    container_name: student_app
+    depends_on:
+      - mysql
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/studentdb?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: rootpassword
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+    ports:
+      - "8080:8080"
+    restart: always
+
+volumes:
+  db_data:
+```
+---
+
 ## 🔗 API Endpoints
 
 | Method | Endpoint                                       | Description                             |
@@ -148,6 +185,7 @@ This project was developed for academic purposes — part of the Spring Boot RES
 Himasha Dewmini 
 Undergraduate, University of Sri Jayewardenepura
 Faculty of Technology 
+
 
 
 
